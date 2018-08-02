@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image\png" href="images\favicon2.png">
+    <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Fredoka+One|Love+Ya+Like+A+Sister|Nixie+One|Sacramento" rel="stylesheet">
+    <link rel="stylesheet" href="css\learningpage.css">
+  </head>
+
+  <body>
+
+    <div class="row">
+      <div class="column1">
+        <header id="title"> flotsam --</header>
+        <header id="subtitle">creating awareness around ocean pollution, one game at a time</header>
+
+      </div>
+      <div class="column2">
+        <button class="button button1" onclick="window.location.href='homepage.html'">back to home</button>
+        <button class="button button1" onclick="window.location.href='gamepage.html'">play the game</button>
+        <button class="button button1" onclick="window.location.href='donatepage.html'">learn more & donate</button>
+      </div>
+    </div>
+
+    &nbsp;
+
+    <!-- body -->
+
+    <p> <h6> secret </h6> </p>
+
+    <div class="row">
+      <div class="bodycolumn1">
+        <img src="images\temporaryphoto.jpg" alt="Picture of our team!" style="width: 100%">
+        <div>&nbsp; from right to left: name, name, name, name </div>
+      </div>
+      <div class="bodycolumn2">
+        <header id="columntitles"> about us! </header>
+        <div> <center> We are a team of four high school-age girls who code, dedicated to saving the environment and helping spread awareness of the tragedy that is ocean pollution. We created Flotsam as a final project through the 2018 Girls Who Code Summer Immersion Program, and hope to continue spreading it even afterwards to keep people aware and engaged. Our hope is that through playing Flotsam, you’ll be motivated to keep learning past the facts we provided and try to make a change. </center> </div>
+      </div>
+    </div>
+    <p> <h6> secret </h6> </p>
+
+    <p> <header id="slideshow"> <center> -------------------------- our inspiration: gerald the turtle! -------------------------- </center> </header> 
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images\sampleturtle1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img_snow_wide.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+  </body>
+
+</html>
