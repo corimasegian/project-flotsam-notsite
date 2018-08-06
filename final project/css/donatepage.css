@@ -78,7 +78,7 @@
     padding: 10px 24px;
     cursor: pointer;
     /* width: 19.5%; */
-    width: 98%;
+    width: 90%;
     font-family: 'Nixie One'; cursive;
     font-weight: bold;
     font-size: 15px;
@@ -126,6 +126,14 @@ body {
   font-weight: normal;
   line-height: 1.5;
   padding: 5px;
+}
+
+table.headertable {
+    border-collapse: collapse;
+}
+
+table.headertable, table.headertable td, table.headertable th {
+    border: 1px solid #cfdfda;
 }
 
 table, th, td {
