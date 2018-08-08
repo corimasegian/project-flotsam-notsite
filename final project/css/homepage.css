@@ -4,8 +4,8 @@
     color: white;
     padding: 10px 24px;
     cursor: pointer;
-    float: left;
-    width: 33.333%;
+    float: right;
+    width: 33.3333%;
     font-family: 'Nixie One'; cursive;
     font-weight: bold;
     font-size: 15px;
@@ -34,28 +34,6 @@ body {
   font-weight: bold;
   font-size: 25.85px;
   line-height: 1.7;
-}
-
-
-.column1 {
-    float: left;
-    width: 50%;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-right: 7px;
-    padding-left: 7px;
-    background-color: #cfdfda;
-}
-.column2 {
-    float: right;
-    width: 48%;
-    padding-top: 0px;
-    padding-left: 5px
-}
-
-.row:after {
-    display: table;
-    clear: both;
 }
 
 #title {
